@@ -4,7 +4,6 @@ pipeline {
     stage('CODE') {
       steps {
         sh 'echo \'Welcome to my pipeline\''
-        git(url: 'https://github.com/kollianil/jenkinsCICD.git', branch: 'master', changelog: true, poll: true)
       }
     }
 
