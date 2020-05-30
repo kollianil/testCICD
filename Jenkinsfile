@@ -4,6 +4,7 @@ pipeline {
     stage('CODE') {
       steps {
         sh 'echo \'Welcome to my pipeline\''
+        git(url: 'https://github.com/pavansw/simple_maven.git/', branch: 'master', changelog: true, poll: true)
       }
     }
 
